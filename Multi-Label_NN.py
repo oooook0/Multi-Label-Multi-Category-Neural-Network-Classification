@@ -13,8 +13,6 @@ class multilabel_nn:
 		self.savefile= savefile
 		self.n_hidden_1 = n_hidden_1
 		self.n_hidden_2 = n_hidden_2
-
-
 		if D and K:
 			self.build(D, K)
 
@@ -64,11 +62,8 @@ class multilabel_nn:
 		cost = self.build(D,K)
 
 		train_op = tf.train.AdamOptimizer(learning_rate=learning_rate).minimize(cost)
-
 		correct_pred = tf.equal(tf.argmax(self.predict_op, 1), tf.argmax(Ytest, 1))
-
 		accuracy = tf.reduce_mean(tf.cast(correct_pred, tf.float32))
-
 		init = tf.global_variables_initializer()
 
 		with tf.Session() as session:
