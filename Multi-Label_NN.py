@@ -86,8 +86,6 @@ class multilabel_nn:
 		self.D = D
 		self.K = K
 
-
-
 	def predict(self, X):
 		
 		with tf.Session() as session:
@@ -95,7 +93,6 @@ class multilabel_nn:
 			self.saver.restore(session, self.savefile)
 			p = self.predict_op.eval(feed_dict={self.inputs: X})
 		return p
-
 
 	def score(self, X, Y):
 		return 1 - error_rate(self.predict(X), Y)
