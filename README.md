@@ -1,3 +1,7 @@
 # Multi-Label-Multi-Category-Neural-Network-Classification
 
-An example of 2 hidden layers Neural Network for Multi-Label Multi-Category Classification
+#### 0 - An example of Multi-Label Multi-Category Classification
+
+ the exmaple uses 2 hidden layers Neural Network 
+
+each neural network uses rectifer unit as activation function
