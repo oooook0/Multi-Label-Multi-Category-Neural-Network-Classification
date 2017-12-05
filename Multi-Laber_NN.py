@@ -121,11 +121,3 @@ class multilabel_nn:
 		  j = json.load(f)
 		return multilabel_nn(j['model'], D=j['D'], K=j['K'])
 		
-
-
-def load_json(filename):
-	json_list = []
-	with open(filename, 'r') as f:
-		for line in f:
-			json_list.append(json.loads(line.strip()))
-	return json_list
