@@ -50,8 +50,7 @@ class multilabel_nn:
 		self.predict_op = tf.nn.sigmoid(logits)
 
 		loss_op = tf.reduce_mean(tf.nn.sigmoid_cross_entropy_with_logits(logits=logits, labels=self.targets))
-
-
+		
 		return loss_op 
 
 	def fit(self, X, Y, Xtest, Ytest, batch_size = 688, learning_rate = 0.01, result_freq = 2):
