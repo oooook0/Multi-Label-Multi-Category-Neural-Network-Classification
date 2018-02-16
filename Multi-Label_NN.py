@@ -9,7 +9,7 @@ def reset_graph(seed=42):
 
 class multilabel_nn:
 	
-	def __init__(self, savefile, n_hidden_1 = 512,n_hidden_2 = 512, D = None, K = None):
+	def __init__(self, savefile = None, n_hidden_1 = 512,n_hidden_2 = 512, D = None, K = None):
 		reset_graph()
 		#reset the graph everytime reinitialize the class
 		self.savefile= savefile
