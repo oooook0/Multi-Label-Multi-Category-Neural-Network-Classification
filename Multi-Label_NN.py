@@ -56,8 +56,7 @@ class multilabel_nn:
 	def fit(self, X, Y, Xtest, Ytest, batch_size = 688, learning_rate = 0.01, result_freq = 2):
 		N, D = X.shape
 		N, K = Y.shape
-		learning_rate = 0.01
-		batch_size = 688
+		
 		n_batches = N // batch_size
 
 		cost = self.build(D,K)
