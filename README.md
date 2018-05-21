@@ -1,4 +1,4 @@
-# Multi-Label-Multi-Category-Neural-Network-Classification
+# Reusable - Multi-Label-Multi-Category-Neural-Network-Classification
 
 #### 1 - An example of Multi-Label Multi-Category Classification
 
